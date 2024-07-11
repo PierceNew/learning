@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML" class="ltx_authors_1line ltx_fleqn">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <title>User Experiences Study of Web Application UI: An Experimental Investigation in MR platforms</title>
+  <creator role="author">
+    <personname></personname>
+  </creator>
+  <creator before="  " role="author">
+    <personname></personname>
+  </creator>
+  <creator before="  " role="author">
+    <personname></personname>
+  </creator>
+  <creator before="  " role="author">
+    <personname></personname>
+    <contact role="affiliation">[</contact>
+    <contact role="affiliation">[</contact>
+    <contact role="affiliation">[</contact>
+    <contact role="affiliation">[</contact>
+    <contact role="affiliation">[</contact>
+  </creator>
+  <abstract name="Abstract">
+    <p>Mixed Reality (MR) technologies provide innovative interaction methodologies and contribute to the digital society. This technology plays an essential role in the entertainment industry. It also shows its enormous potential to revolutionize how we perceive and interact with various fields such as medical, education and communication. In this perspective paper, we start by analyzing the websites’ applied circumstances in MR platforms. The paper proposes a question that the current websites have a negative user experience due to the limited support from MR platforms. In order to testify to our theory, the research designs a contrast experiment with 80 participants to evaluate the user experience. Compared with the desktop devices, the experimental data shows that the website user experience in MR platforms receives worse performance than the desktop group. The study organizes a one-to-one interview to collect the primary reasons. Based on the interview, the study summarizes the existing issues. Afterward, the paper proposes a possible conceptual path and indicates the future study goal based on the experimental study.</p>
+  </abstract>
+  <para xml:id="p1">
+    <p>1,2]Yongkang Xing
+2,*]Jethro Shell
+2,+]Conor Fahy
+3]Ho Yan Kwan
+1]Guangdong University of Finance, Center of Experimental Teaching, Guangzhou, 510521, China
+2]De Montfort University, Institute of Artificial Intelligence, Leicester, LE1 9BH, UK
+3]Software Engineering Institute of Guangzhou, Guangzhou, 510980, China
+*]jethros@dmu.ac.uk
++]these authors contributed equally to this work
+<!--  %\keywords{Keyword1,␣Keyword2,␣Keyword3} 
+     %****␣main.tex␣Line␣25␣****--></p>
+  </para>
+  <section xml:id="Sx1">
+    <title>Introduction</title>
+    <para xml:id="Sx1.p1">
+      <p>Mixed Reality (MR) is a combination concept of augmented reality (AR) and virtual reality (VR) <cite class="ltx_citemacro_cite">[<bibref bibrefs="Speicher:2019" separator="," yyseparator=","/>]</cite>. MR devices combine the VR’s hardware(medium) and AR’s usages. AR technology mainly applies to existing smart devices, such as the cameras of tablets and mobile phones, on the interaction between virtual objects and natural scenes <cite class="ltx_citemacro_cite">[<bibref bibrefs="Valentin:2018" separator="," yyseparator=","/>]</cite>. MR technology plays similar usages in interaction but uses headsets as the hardware. While developers use VR headsets to interact with the virtual world, existing MR devices are headsets that mix the virtual object/small environment into reality <cite class="ltx_citemacro_cite">[<bibref bibrefs="Speicher:2019" separator="," yyseparator=","/>]</cite>. It has shown its vast potential in the media, entertainment, communication, education, and other fields <cite class="ltx_citemacro_cite">[<bibref bibrefs="Arnaldi:2018" separator="," yyseparator=","/>]</cite>. Due to various reality interaction fields that may lead to confusion definition, industries combine AR, MR and VR into Extended reality (XR) as a broad concept <cite class="ltx_citemacro_cite">[<bibref bibrefs="Milgram:1994" separator="," yyseparator=","/>]</cite>.</p>
+    </para>
+    <para xml:id="Sx1.p2">
+      <p>Websites are the general and essential element in daily life <cite class="ltx_citemacro_cite">[<bibref bibrefs="Schaupp:2009" separator="," yyseparator=","/>]</cite>. Suppose a smart device extends to a large consumer group. In that case, it should support the web browser to satisfy most daily living usage. For instance, mobile devices support the browsers and HTML 5 response layout so that the users transform their digital experiences from desktop to mobile <cite class="ltx_citemacro_cite">[<bibref bibrefs="Curran:2012" separator="," yyseparator=","/>]</cite>. Therefore, MR platforms should support the website’s exploration so that it can extend its applied field and match more consumers’ criteria. Consequently, Web XR has been put forward as a general standard in the Web XR Device Application Programming Interface (API) created by The Immersive Web Working Group under the W3C in recent years<cite class="ltx_citemacro_cite">[<bibref bibrefs="Maclntyre:2018" separator="," yyseparator=","/>]</cite>. Web XR is based on HTML5 technology and renders a three-dimensional (3D) space in the browser <cite class="ltx_citemacro_cite">[<bibref bibrefs="Zarka:2016" separator="," yyseparator=","/>]</cite>. Web XR Device API allows the web application to access the XR device motion and direction tracking features as the native applications<cite class="ltx_citemacro_cite">[<bibref bibrefs="Zarka:2016,Xing:2021" separator="," yyseparator=","/>]</cite>.</p>
+    </para>
+    <para xml:id="Sx1.p3">
+      <p>Although Web XR has become a new XR research field, it still has a particular gap in achieving the 3D display and interactive effects in most existing websites. All Existing MR devices have a web browser that compliant fundamental gesture interactions such as scrolling, dragging, and zooming <cite class="ltx_citemacro_cite">[<bibref bibrefs="Qiao:2019" separator="," yyseparator=","/>]</cite>. However, most websites’ User Interface (UI) does not have the XR version and maintains the desktop version on display <cite class="ltx_citemacro_cite">[<bibref bibrefs="Qiao:2019" separator="," yyseparator=","/>]</cite>. Therefore, the study found limited support for transferring website services into XR platform <cite class="ltx_citemacro_cite">[<bibref bibrefs="Hussain:2018" separator="," yyseparator=","/>]</cite>. The issue raises a critical question that the limitation may cause negative user experiences and affects extending the user group in the Web XR.</p>
+    </para>
+    <para xml:id="Sx1.p4">
+      <p>The study goes through related background research. We find that some existing studies try to improve some websites’ layout <cite class="ltx_citemacro_cite">[<bibref bibrefs="Safikhani:2021" separator="," yyseparator=","/>]</cite>. However, no research in conducting extensive user tests to discuss the proposed question. In order to analyze the issue and evaluate the adverse effect, it is necessary to run an experimental investigation and receive detailed user feedback. In this paper, the research aims to evaluate the reading user experience in MR web browser. It can analyze the user feedback and propose the conceptual path in enhancing the user experience in MR Web exploration. The user experiment is overview shown in Figure <ref labelref="LABEL:fig:projectoverview"/>. The following content are the research characteristics:</p>
+    </para>
+    <para xml:id="Sx1.p5">
+      <itemize xml:id="Sx1.I1">
+        <item xml:id="Sx1.I1.i1">
+          <tags>
+            <tag>•</tag>
+            <tag role="typerefnum">1st item</tag>
+          </tags>
+          <para xml:id="Sx1.I1.i1.p1">
+            <p>The study evaluates the reading efficiency of the current websites in MR browsers, we conducted a user test experiment with 80 participants.</p>
+          </para>
+        </item>
+        <item xml:id="Sx1.I1.i2">
+          <tags>
+            <tag>•</tag>
+            <tag role="typerefnum">2nd item</tag>
+          </tags>
+          <para xml:id="Sx1.I1.i2.p1">
+            <p>The research receives user feedback through questionnaires and one-to-one interviews in the MR user group. We conclude the overall reading performance and evaluate the potential issues.</p>
+          </para>
+        </item>
+        <item xml:id="Sx1.I1.i3">
+          <tags>
+            <tag>•</tag>
+            <tag role="typerefnum">3rd item</tag>
+          </tags>
+          <para xml:id="Sx1.I1.i3.p1">
+            <p>The research analyzes the user data and MR interaction features. It aims to put forward the conceptual path integrated with websites to enhance users’ immersive experience.</p>
+          </para>
+        </item>
+      </itemize>
+    </para>
+<!--  %****␣main.tex␣Line␣50␣**** -->    <para xml:id="Sx1.p6">
+      <p>Our research has achieved some position outcomes. The research team presented the literature review study about XR history and its characteristics at IEEE 7th International Conference on Virtual Reality (ICVR 2021) <cite class="ltx_citemacro_cite">[<bibref bibrefs="Xing:2021" separator="," yyseparator=","/>]</cite>. The current study process has moved much further than the previous year. The study has concluded the user experience feedback in current XR browsers. In the following sections, the research discusses the experimental methodologies, process, result and data analysis.</p>
+    </para>
+    <figure inlist="lof" labels="LABEL:fig:projectoverview" placement="htp" xml:id="Sx1.F1">
+      <tags>
+        <tag><text fontsize="90%">Figure 1</text></tag>
+        <tag role="refnum">1</tag>
+        <tag role="typerefnum">Figure 1</tag>
+      </tags>
+      <figure align="center" inlist="lof" labels="LABEL:fig:y_equals_x" placement="b" xml:id="Sx1.F0.sf1">
+        <tags>
+          <tag><text fontsize="90%">(a)</text></tag>
+          <tag role="refnum">0(a)</tag>
+        </tags>
+        <graphics class="ltx_centering" graphic="figures/Figure1a.jpg" options="height=140.0pt" xml:id="Sx1.F0.sf1.g1"/>
+        <toccaption class="ltx_centering"><tag close=" ">(a)</tag></toccaption>
+        <caption class="ltx_centering"><tag close=" "><text fontsize="90%">(a)</text></tag></caption>
+      </figure>
+      <figure align="center" inlist="lof" labels="LABEL:fig:three_sin_x" placement="b" xml:id="Sx1.F0.sf2">
+        <tags>
+          <tag><text fontsize="90%">(b)</text></tag>
+          <tag role="refnum">0(b)</tag>
+        </tags>
+        <graphics class="ltx_centering" graphic="figures/Figure1b.jpg" options="height=140.0pt" xml:id="Sx1.F0.sf2.g1"/>
+        <toccaption class="ltx_centering"><tag close=" ">(b)</tag></toccaption>
+        <caption class="ltx_centering"><tag close=" "><text fontsize="90%">(b)</text></tag></caption>
+      </figure>
+      <toccaption class="ltx_centering"><tag close=" ">1</tag>The Experiment Investigation Overview: (a) HoloLens 2 Group User Test; (b) Website UI Comparison between HoloLens 2 and Desktop platform.</toccaption>
+      <caption class="ltx_centering"><tag close=": "><text fontsize="90%">Figure 1</text></tag><text fontsize="90%">The Experiment Investigation Overview: (a) HoloLens 2 Group User Test; (b) Website UI Comparison between HoloLens 2 and Desktop platform.</text></caption>
+    </figure>
+  </section>
+  <section xml:id="Sx2">
+    <title>Related Works</title>
+    <para xml:id="Sx2.p1">
+      <p>In order to design a valuable investigation, the research briefly discusses the research scope. The study explores the related websites’ knowledge in this section. Besides, the research covers the user experiment flow, participants, questionnaire design, and data measurement. The research aims to receive valuable user feedback to build the conceptual framework by building the experimental survey.</p>
+    </para>
+    <subsection xml:id="Sx2.SSx1">
+      <title>Research Scope</title>
+      <para xml:id="Sx2.SSx1.p1">
+        <p>Global websites contains various types so that the study need to narrow the research scope and select the research target. We can run the user test with specific categories and analyze its related UI structure. The study found that various websites can conclude into two primary types: static and dynamic websites <cite class="ltx_citemacro_cite">[<bibref bibrefs="McMahon:2011" separator="," yyseparator=","/>]</cite>.</p>
+      </para>
+      <para xml:id="Sx2.SSx1.p2">
+        <p>The dynamic websites usually have a Content Management System (CMS) which is a back office to dynamically manage the website with commercial and online service<cite class="ltx_citemacro_cite">[<bibref bibrefs="McMahon:2011" separator="," yyseparator=","/>]</cite>. The system can help the staff to manage the website content without specific web development knowledge. There are three primary dynamic website types: commercial (e-Commerce), service, and mixed websites<cite class="ltx_citemacro_cite">[<bibref bibrefs="Cebi:2013" separator="," yyseparator=","/>]</cite>. Commercial websites usually run the online shopping business with three modes: B2B (Business to Business), B2C (Business to Client) and C2C (Client to Client) <cite class="ltx_citemacro_cite">[<bibref bibrefs="Cebi:2013" separator="," yyseparator=","/>]</cite>. Service websites focus on providing specific functions such as communication or reading modules <cite class="ltx_citemacro_cite">[<bibref bibrefs="Cebi:2013" separator="," yyseparator=","/>]</cite>. Mixed websites mix service and commercial modules <cite class="ltx_citemacro_cite">[<bibref bibrefs="Cebi:2013" separator="," yyseparator=","/>]</cite>.
+<!--  %****␣main.tex␣Line␣75␣**** --></p>
+      </para>
+      <para xml:id="Sx2.SSx1.p3">
+        <p>Compared to dynamic websites, static websites contain less content so it doesn’t need the back office. Static websites usually display the business information with basic interactive elements such as contact forms <cite class="ltx_citemacro_cite">[<bibref bibrefs="McMahon:2011" separator="," yyseparator=","/>]</cite>. Most static websites don’t usually update so these websites’ information is close to static without dynamic management. Although static websites have limited functions, it occupies the most significant ratio of the global websites. Web Hosting statistics that the static websites without back office occupy 51.3% in 2022 <cite class="ltx_citemacro_cite">[<bibref bibrefs="Matt.2022" separator="," yyseparator=","/>]</cite>. Therefore, it is also essential to discuss.</p>
+      </para>
+      <para xml:id="Sx2.SSx1.p4">
+        <p>By various background studies, we conclude the website category. The study aims to evaluate reading efficiency. Therefore, we select two types of websites in the investigation: publication service website and business static website.</p>
+      </para>
+      <para xml:id="Sx2.SSx1.p5">
+        <p>GNA Web Design (https://gnawebdesign.com.au/) has a standard business static website structure <cite class="ltx_citemacro_cite">[<bibref bibrefs="GNA.2022" separator="," yyseparator=","/>]</cite>. The research uses it as a test sample from static websites. CNKI (https://www.cnki.net/) is a publication website that shares most Chinese academic articles <cite class="ltx_citemacro_cite">[<bibref bibrefs="CNKI.2022" separator="," yyseparator=","/>]</cite>. Therefore, the research uses it as an experimental sample from dynamic websites.</p>
+      </para>
+    </subsection>
+  </section>
+  <section xml:id="Sx3">
+    <title>Methods</title>
+    <subsection xml:id="Sx3.SSx1">
+      <title>Participant</title>
+      <para xml:id="Sx3.SSx1.p1">
+        <p>The research recruits 80 participants from Guangdong University of Finance in the user experiment. All participants are undergraduate students. They are studying Computer Science and Data Science (same grade). Participants are divided randomly into four groups named Group A-1/A-2/B-1/B-2, as shown in Table <ref labelref="LABEL:tab:Participants"/>. Each group contains 20 students. The experiment uses different platforms and reading material to explore the web content. Platforms and reading material are the contrasted condition in each group. We confirm that informed consent was obtained from all participants.</p>
+      </para>
+      <table inlist="lot" labels="LABEL:tab:Participants" placement="htp" xml:id="Sx3.T1">
+        <tags>
+          <tag><text fontsize="90%">Table 1</text></tag>
+          <tag role="refnum">1</tag>
+          <tag role="typerefnum">Table 1</tag>
+        </tags>
+        <tabular class="ltx_centering ltx_guessed_headers" vattach="middle">
+          <thead>
+            <tr>
+              <td border="l r t" thead="column"/>
+              <td align="left" border="r t" thead="column"><text font="bold">Group A-1</text></td>
+              <td align="left" border="r t" thead="column"><text font="bold">Group A-2</text></td>
+              <td align="left" border="r t" thead="column"><text font="bold">Group B-1</text></td>
+              <td align="left" border="r t" thead="column"><text font="bold">Group B-2</text></td>
+            </tr>
+          </thead>
+          <tbody>
+		    <tr>
+              <td align="left" border="l r t" thead="column"><text font="bold">Participant Number</text></td>
+              <td align="left" border="r t" thead="column">20</td>
+              <td align="left" border="r t" thead="column">20</td>
+              <td align="left" border="r t" thead="column">20</td>
+              <td align="left" border="r t" thead="column">20</td>
+            </tr>
+            <tr>
+              <td align="left" border="l r t"><text font="bold">Study Background</text></td>
+              <td align="left" border="r t">Undergraduate Student</td>
+              <td align="left" border="r t">Undergraduate Student</td>
+              <td align="left" border="r t">Undergraduate Student</td>
+              <td align="left" border="r t">Undergraduate Student</td>
+            </tr>
+            <tr>
+              <td align="left" border="l r t"><text font="bold">Platform</text></td>
+              <td align="left" border="r t">MR(HoloLens 2)</td>
+              <td align="left" border="r t">Desktop</td>
+              <td align="left" border="r t">MR(HoloLens 2)</td>
+              <td align="left" border="r t">Desktop</td>
+            </tr>
+            <tr>
+              <td align="left" border="b l r t"><text font="bold">Reading Material</text></td>
+              <td align="left" border="b r t">Static Website(GNA)</td>
+              <td align="left" border="b r t">Static Website(GNA)</td>
+              <td align="left" border="b r t">Dynamic Website(CNKI)</td>
+              <td align="left" border="b r t">Dynamic Website(CNKI)</td>
+            </tr>
+          </tbody>
+        </tabular>
+<!--  %****␣main.tex␣Line␣100␣**** -->        <toccaption class="ltx_centering"><tag close=" ">1</tag>Demographics of the Participants.</toccaption>
+        <caption class="ltx_centering"><tag close=": "><text fontsize="90%">Table 1</text></tag><text fontsize="90%">Demographics of the Participants.</text></caption>
+      </table>
+      <para xml:id="Sx3.SSx1.p2">
+        <p>Group A-1/A-2 read the GNA business website (static website), but they use different platforms (condition). Group A uses the HoloLens 2 and Group B uses the desktop. Group B-1/B-2 explores several articles in CNKI (dynamic website) with different platforms (the same condition as Group A-1/A-2). Group B-1/B-2 complete the same exploring task. In the pre-test and post-test, each participant should complete an online questionnaire form about the website’s information.</p>
+      </para>
+    </subsection>
+    <subsection xml:id="Sx3.SSx2">
+      <title>Experiment Flow</title>
+      <para xml:id="Sx3.SSx2.p1">
+        <p>The experiment divides into three sessions: Pre-test, User Task and Post-test as shown in Figure <ref labelref="LABEL:fig:flow"/>.</p>
+      </para>
+      <para xml:id="Sx3.SSx2.p2">
+        <p>Pre-test aims to guarantee each group has similar knowledge before participating in User Task. Each participant needs to complete an open-end online questionnaire in 5 minutes. Group A-1/A-2 faced the pre-test on December 21st, 2021 and Group B-1/B-2 was on February 28th, 2021. It is necessary to avoid bringing the questionnaire memory in the User Task that affects the test data. The time gap between pre-test and post-test is more than one month, leading users to forget the pre-test questionnaire. Group A-1 is in March 23rd and 24th, 2022. Group A-2 is in February 25th, 2022. Group B-1 is in April 27th and 28th, 2022. Group B-2 is in April 12th, 2022.</p>
+      </para>
+      <para xml:id="Sx3.SSx2.p3">
+        <p>In User Task, each group need to complete the task. Group A-1 participants use HoloLens 2 to explore each page from GNA Webdesign(static website) while Group A-2 use the desktop. Group A-1/A-2 has 20 minutes time limitation to play. Group B-1 participants use HoloLens 2 to search two specific articles and read them from CNKI(dynamic website) while Group A-2 use the desktop. Group B-1/B-2 has 30 minutes time limitation to play.</p>
+      </para>
+      <para xml:id="Sx3.SSx2.p4">
+        <p>After completing User Task, each participant receives the same open-end questionnaire online in five minutes. Group A-1/B-1 have to participate in the one-to-one interview to talk about the user experience in using HoloLens2. Each interview lasts from 5 to 10 minutes.</p>
+      </para>
+      <figure inlist="lof" labels="LABEL:fig:flow" placement="htp" xml:id="Sx3.F2">
+        <tags>
+          <tag><text fontsize="90%">Figure 2</text></tag>
+          <tag role="refnum">2</tag>
+          <tag role="typerefnum">Figure 2</tag>
+        </tags>
+        <graphics class="ltx_centering" graphic="figures/figure2.jpg" options="width=433.62pt" xml:id="Sx3.F2.g1"/>
+        <toccaption class="ltx_centering"><tag close=" ">2</tag>Experiment Flow.</toccaption>
+        <caption class="ltx_centering"><tag close=": "><text fontsize="90%">Figure 2</text></tag><text fontsize="90%">Experiment Flow.</text></caption>
+      </figure>
+    </subsection>
+    <subsection xml:id="Sx3.SSx3">
+      <title>Questionnaire Details</title>
+      <para xml:id="Sx3.SSx3.p1">
+        <p>All participants have 5 minutes to complete the online questionnaire form. Group A-1/A-2 participants face the questions related to the static website content, while Group B-1/B-2 is dynamic.</p>
+      </para>
+      <para xml:id="Sx3.SSx3.p2">
+        <p>The static website questionnaire form includes seven single choices and three judgments. The form covers the GNA history and business services details. Table <ref labelref="LABEL:tab:QuestionA"/> displays the Group A-1/A-2 questionnaire details.</p>
+      </para>
+      <para xml:id="Sx3.SSx3.p3">
+        <p>The dynamic website questionnaire section covers the main content in two selected articles. The questionnaire has four judgment questions and six single choices. Table <ref labelref="LABEL:tab:QuestionB"/> displays the Group B-1/B-2 form details.</p>
+      </para>
+    </subsection>
+    <subsection xml:id="Sx3.SSx4">
+      <title>Questionnaire Calculation</title>
+      <para xml:id="Sx3.SSx4.p1">
+        <p>The questionnaire form has 10 scores in total. Each question has 1 score. After the participants completed the online questionnaire, the study calculates each group’s score. For example, ten people get 5 scores, and ten people get 4 scores. Each group has 20 people so the average group score is calculated as (10 × 5 + 10 × 4)/20 = 4.5.
+<!--  %****␣main.tex␣Line␣175␣**** --></p>
+      </para>
+    </subsection>
+    <subsection xml:id="Sx3.SSx5">
+      <title>Ethical approval</title>
+      <para xml:id="Sx3.SSx5.p1">
+        <p>This study complied with all relevant guidelines and regulations. The protocol of this study was reviewed and approved by De Montfort University Faculty of Computing, Engineering &amp; Media Human Research Ethics committee.</p>
+      </para>
+    </subsection>
+  </section>
+  <section xml:id="Sx4">
+    <title>Results</title>
+    <subsection xml:id="Sx4.SSx1">
+      <title>Questionnaire Data</title>
+      <para xml:id="Sx4.SSx1.p1">
+        <p>The study collects the pre-test user score from four groups. Figure. <ref labelref="LABEL:fig:Pre-test-A"/> displays the user questionnaire score distribution in static website (Group A-1/A-2). Figure. <ref labelref="LABEL:fig:Pre-test-B"/> illustrates the Group B-1/B-2 data. All groups’ median score is 4. The study analyzes the <text font="italic">p-value</text> between each group Table <ref labelref="LABEL:tab:p-value"/>. The p-value in Group A-1/A-2 is 0.557. The p-value in Group B-1/B-2 is 0.319. The pre-test data shows that each group has similar circumstances before the experiment. Therefore, both groups can move into the experiment session and compare the post-test data.</p>
+      </para>
+      <para xml:id="Sx4.SSx1.p2">
+        <p>The study provides a tutorial for HoloLens 2 and guarantees that all participants can operate the devices. The research collected the post-test data. Figure <ref labelref="LABEL:fig:Post-test-A"/> shows the comparison between Group A-1/A-2 user score distribution. Figure <ref labelref="LABEL:fig:Post-test-B"/> shows the comparison data between Group B-1/B-2.Furthermore, the study calculated the average and median scores in the post-test (Table <ref labelref="LABEL:tab:pre-post-test"/>). By analyzing the experiment data, two trends were obtained as follows:</p>
+        <itemize xml:id="Sx4.I2">
+          <item xml:id="Sx4.I2.i1">
+            <tags>
+              <tag>•</tag>
+              <tag role="typerefnum">1st item</tag>
+            </tags>
+            <para xml:id="Sx4.I2.i1.p1">
+              <p>Group A-2 and B-2’s post-test average score was more than 75% higher than the pre-test, while the median score was 100% at least. Significantly, both websites can provide convenient user experiences on desktops.</p>
+            </para>
+          </item>
+          <item xml:id="Sx4.I2.i2">
+            <tags>
+              <tag>•</tag>
+              <tag role="typerefnum">2nd item</tag>
+            </tags>
+            <para xml:id="Sx4.I2.i2.p1">
+              <p>Group A-1 and Group B-1’s post-test data performance is better than pre-test but worse than Group A-1/B-2. The desktop UI has poor performance in MR devices.</p>
+            </para>
+          </item>
+        </itemize>
+      </para>
+      <para xml:id="Sx4.SSx1.p3">
+        <p>The above data shows that the desktop version’s UI in MR devices can not provide the same exploration performance as on the desktop. Therefore, the study should find out the reason for the result. The study runs a one-to-one interview that asks the feedback from Group A-1/B-1 participants.</p>
+      </para>
+      <figure inlist="lof" labels="LABEL:fig:Pre-test-A" placement="htp" xml:id="Sx4.F3">
+        <tags>
+          <tag><text fontsize="90%">Figure 3</text></tag>
+          <tag role="refnum">3</tag>
+          <tag role="typerefnum">Figure 3</tag>
+        </tags>
+        <graphics class="ltx_centering" graphic="figures/Pre-test-A.png" options="width=346.896pt" xml:id="Sx4.F3.g1"/>
+        <toccaption class="ltx_centering"><tag close=" ">3</tag>Group A-1/A-2 User Score Distribution(Pre-test).</toccaption>
+        <caption class="ltx_centering"><tag close=": "><text fontsize="90%">Figure 3</text></tag><text fontsize="90%">Group A-1/A-2 User Score Distribution(Pre-test).</text></caption>
+      </figure>
+      <figure inlist="lof" labels="LABEL:fig:Pre-test-B" placement="htp" xml:id="Sx4.F4">
+        <tags>
+          <tag><text fontsize="90%">Figure 4</text></tag>
+          <tag role="refnum">4</tag>
+          <tag role="typerefnum">Figure 4</tag>
+        </tags>
+        <graphics class="ltx_centering" graphic="figures/Pre-test-B.png" options="width=346.896pt" xml:id="Sx4.F4.g1"/>
+        <toccaption class="ltx_centering"><tag close=" ">4</tag>Group B-1/B-2 User Score Distribution(Pre-test).</toccaption>
+        <caption class="ltx_centering"><tag close=": "><text fontsize="90%">Figure 4</text></tag><text fontsize="90%">Group B-1/B-2 User Score Distribution(Pre-test).</text></caption>
+      </figure>
+<!--  %****␣main.tex␣Line␣200␣**** -->      <table inlist="lot" labels="LABEL:tab:p-value" placement="htp" xml:id="Sx4.T4">
+        <tags>
+          <tag><text fontsize="90%">Table 4</text></tag>
+          <tag role="refnum">4</tag>
+          <tag role="typerefnum">Table 4</tag>
+        </tags>
+        <tabular class="ltx_centering ltx_guessed_headers" vattach="middle">
+          <thead>
+            <tr>
+              <td align="center" border="l r t" thead="column"><text font="bold">Compared Group</text></td>
+              <td align="center" border="r t" thead="column">Group A-1 and Group A-2</td>
+			   <td align="center" border="r t">Group B-1 and Group B-2</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+			<td align="center" border="l r t"><text font="bold italic">p-value</text></td>
+            <td align="center" border="b r t">0.319</td>
+            <td align="center" border="r t">0.557</td>
+            </tr>
+          </tbody>
+        </tabular>
+        <toccaption class="ltx_centering"><tag close=" ">4</tag> <text font="italic">p-value</text> between each Groups (Pre-test) in Excel Software.</toccaption>
+        <caption class="ltx_centering"><tag close=": "><text fontsize="90%">Table 4</text></tag><text fontsize="90%"><text font="italic">p-value</text> between each Groups (Pre-test) in Excel Software.</text></caption>
+      </table>
+      <figure inlist="lof" labels="LABEL:fig:Post-test-A" placement="htp" xml:id="Sx4.F5">
+        <tags>
+          <tag><text fontsize="90%">Figure 5</text></tag>
+          <tag role="refnum">5</tag>
+          <tag role="typerefnum">Figure 5</tag>
+        </tags>
+        <graphics class="ltx_centering" graphic="figures/Post-test-A.png" options="width=346.896pt" xml:id="Sx4.F5.g1"/>
+        <toccaption class="ltx_centering"><tag close=" ">5</tag>Group B-1/B-2 User Score Distribution(Post-test).</toccaption>
+        <caption class="ltx_centering"><tag close=": "><text fontsize="90%">Figure 5</text></tag><text fontsize="90%">Group B-1/B-2 User Score Distribution(Post-test).</text></caption>
+      </figure>
+      <figure inlist="lof" labels="LABEL:fig:Post-test-B" placement="htp" xml:id="Sx4.F6">
+        <tags>
+          <tag><text fontsize="90%">Figure 6</text></tag>
+          <tag role="refnum">6</tag>
+          <tag role="typerefnum">Figure 6</tag>
+        </tags>
+        <graphics class="ltx_centering" graphic="figures/Post-test-B.png" options="width=346.896pt" xml:id="Sx4.F6.g1"/>
+<!--  %****␣main.tex␣Line␣225␣**** -->        <toccaption class="ltx_centering"><tag close=" ">6</tag>Group B-1/B-2 User Score Distribution(Post-test).</toccaption>
+        <caption class="ltx_centering"><tag close=": "><text fontsize="90%">Figure 6</text></tag><text fontsize="90%">Group B-1/B-2 User Score Distribution(Post-test).</text></caption>
+      </figure>
+      <table inlist="lot" labels="LABEL:A LABEL:tab:pre-post-test" placement="htp" xml:id="Sx4.T5">
+        <tags>
+          <tag><text fontsize="90%">Table 5</text></tag>
+          <tag role="refnum">5</tag>
+          <tag role="typerefnum">Table 5</tag>
+        </tags>
+        <tabular class="ltx_centering" vattach="middle">
+          <thead>
+            <tr>
+              <td align="center" border="l r t"><text font="bold">Group Name</text></td>
+              <td align="center" border="r t">Group A-1</td>
+              <td align="center" border="r t">Group A-2</td>
+              <td align="center" border="r t">Group B-1</td>
+              <td align="center" border="r t">Group B-2</td>
+            </tr>
+          </thead>
+		  <tbody>
+            <tr>
+              <td align="center" border="l r t"><text font="bold">Average Score (Pre-test)</text></td>
+              <td align="center" border="r t">3.8</td>
+              <td align="center" border="r t">4.0</td>
+              <td align="center" border="r t">4.15</td>
+              <td align="center" border="r t">3.8</td>
+            </tr>
+            <tr>
+              <td align="center" border="l r t"><text font="bold">Median Score (Pre-test)</text></td>
+              <td align="center" border="r t">4.0</td>
+              <td align="center" border="r t">4.0</td>
+              <td align="center" border="r t">4.0</td>
+              <td align="center" border="r t">4.0</td>
+            </tr>
+            <tr>
+              <td align="center" border="l r t"><text font="bold">Average Score (Post-test)</text></td>
+              <td align="center" border="r t">6.15</td>
+              <td align="center" border="r t">7.9</td>
+              <td align="center" border="r t">6.05</td>
+              <td align="center" border="r t">6.7</td>
+            </tr>
+            <tr>
+              <td align="center" border="b l r t"><text font="bold">Median Score (Post-test)</text></td>
+              <td align="center" border="b r t">6.0</td>
+              <td align="center" border="b r t">8.0</td>
+              <td align="center" border="b r t">6.0</td>
+              <td align="center" border="b r t">7.0</td>
+            </tr>
+          </tbody>
+        </tabular>
+        <toccaption class="ltx_centering"><tag close=" ">5</tag>verage and median score data in each group.</toccaption>
+        <caption class="ltx_centering"><tag close=": "><text fontsize="90%">Table 5</text></tag><text fontsize="90%">verage and median score data in each group.</text></caption>
+      </table>
+    </subsection>
+    <subsection xml:id="Sx4.SSx2">
+      <title>Interview Data</title>
+      <para xml:id="Sx4.SSx2.p1">
+        <p>The study interviewed 40 participants from Group A-1/B-1 in total. Each interview starts after the participant completes the exploration and questionnaire. The interview covers three primary aspects: negative experience in exploration; the difference between desktop and HoloLens 2(MR devices); the suggestion for improving Web XR UI(optional).</p>
+      </para>
+      <para xml:id="Sx4.SSx2.p2">
+        <p>The study receive much negative feedback in the interview and summarize the hardware aspects. At first, 40(100%) participants reflects that the field of view was limited. When the participant opens different windows, it may lose the visual in some panels. Secondly, 37(92.5%) participants say that the blurred rainbow-colored light flare affects their vision and brings visual fatigue. Thirdly, 35(87.5%) participants felt tired when using the gesture too long. Fourthly, 32(80%) participants easily made wrong selections due to the high gesture sensitivity. Last but not least, 29(72.5%) participants mention the weak button touching feedback.</p>
+      </para>
+<!--  %****␣main.tex␣Line␣250␣**** -->      <para xml:id="Sx4.SSx2.p3">
+        <p>Apart from the above hardware issues, the study asks the participants about the difference between using HoloLens 2 and desktop to explore the websites. The participants put forward the following issues in HoloLens 2: navigation is too small to select the correct item as usual; the font is too tiny to look; the typing is too tricky and they feel tired when typing for a long time.</p>
+      </para>
+      <para xml:id="Sx4.SSx2.p4">
+        <p>The interview allows participants to illustrate their suggestions for improving the Web XR experiences. 15(37.5%) participants propose the following primary suggestions: design the navigation menu with suitable padding space in the 3D environment; each content should have abstract information to indicate users to explore; display the content as different sessions in the 3D space.</p>
+      </para>
+    </subsection>
+    <subsection xml:id="Sx4.SSx3">
+      <title>Result Analysis</title>
+      <para xml:id="Sx4.SSx3.p1">
+        <p>The study collects the data and interview content to analyze how to overcome the current issue. The study divides the analysis into two aspects: hardware and software(UI).</p>
+      </para>
+      <para xml:id="Sx4.SSx3.p2">
+        <p>The hardware has two primary issues: the blurred rainbow-colored light flare and the limited field of view (FOV). Both issues affect the users in visiting the content. The MR platforms have suffered FOV issues in a long time. The hardware developers have upgraded the angles from 30 degrees in HoloLens 1 to around 50 degrees in HoloLens 2 and Magic Leap One <cite class="ltx_citemacro_cite">[<bibref bibrefs="Xiong:2020,Gruenefeld:2017" separator="," yyseparator=","/>]</cite>. Although there are some updates, the degree is a significant weakness because the human eye horizon FOV is 135 degrees <cite class="ltx_citemacro_cite">[<bibref bibrefs="Rahul:2022" separator="," yyseparator=","/>]</cite>. Besides the FOV, color flaws are another significant issue in MR platforms. We found that some HoloLens users reflect the issue, especially under robust environmental lighting <cite class="ltx_citemacro_cite">[<bibref bibrefs="INPUT.2020,Zhan:2020" separator="," yyseparator=","/>]</cite>. In short, the FOV and color flaws are the current major challenge in MR systems due to material limitations.</p>
+      </para>
+      <para xml:id="Sx4.SSx3.p3">
+        <p>In the UI aspect, there are two primary directions: System Interaction Setting and Web UI. The HoloLens 2 and other VR/MR devices provide a general mid-air keyboard in typing <cite class="ltx_citemacro_cite">[<bibref bibrefs="Rickel:2022" separator="," yyseparator=","/>]</cite>. It can cause tiredness for a long time because the user is typing in the air without touch feedback. Therefore, typing tiredness is a critical challenge in MR platforms. Although the user can use voice recognition to replace the typing, the voice can not apply in long text because the long time speak also brings tiredness. Therefore, designing an innovative typing methodology using gesture interaction is necessary.</p>
+      </para>
+      <para xml:id="Sx4.SSx3.p4">
+        <p>Compared to difficulty in hardware material, designing an improved Web UI in MR platforms can solve most negative feedback in Web UI aspects. By analyzing the interview data, we summarize three primary aspects: navigation, content layout and guidance. The study proposes the following conceptual solutions. At first, it requires an innovative navigation UI with suitable padding space. Furthermore, it should fit with the gesture interaction in conveniently selecting items and sub-items. Secondly, designing a 3D layout to display the content can use the MR spatial feature to maximize the immersive experience. Besides, the layout can scale the selected content and avoid font size issues. Lastly, the UI should contain clear guidance (text or icon) to help the users to visit different content without distracting by various elements in 3D space. Considering the above conceptual solutions, it is necessary to establish a general UI framework principle. Furthermore, the research should refer to various websites’ existing general principles and design the content display with 3D features.</p>
+      </para>
+    </subsection>
+  </section>
+  <section xml:id="Sx5">
+    <title>Conclusion</title>
+    <para xml:id="Sx5.p1">
+      <p>The study found that the existing MR browsers display various websites without MR interaction characteristics. We proposed a question that the current MR browsers may negatively affect exploration. In order to testify to our theory, the study designed a user test experiment with 80 participants. The research covered static and dynamic websites. The data confirmed our assumption that the MR browser’s website user experience is worse than the desktop. The study aimed to find the primary reasons and conduct a one-to-one interview. The user feedback data showed that hardware and software should improve to adapt to XR features. Based on these evaluations, we believed an innovative Web XR UI principle is necessary. It could be used as a practical exploration tool for various websites and extend the user market. In short, the study overviewed the major challenges and discussed potential opportunities of improving the user experience in Web MR.</p>
+    </para>
+    <para xml:id="Sx5.p2">
+      <p>Although the study pointed out the negative aspect of Web XR, it has not put forward a detailed resolution. Besides, the investigation only covers two websites, while there are various types of websites global. Therefore, it is necessary to go further. Our future work will focus on solving the Web UI issues to improve website performance on XR platforms. The study plans to design the general UI principle with MR features. We will conduct the user test to testify our research output.</p>
+    </para>
+  </section>
+  <section xml:id="Sx6">
+    <title>Data availability</title>
+    <para xml:id="Sx6.p1">
+      <p>The datasets used and analysed during the current study available from the corresponding author on reasonable request.</p>
+    </para>
+  </section>
+  <bibliography citestyle="numbers" files="references" xml:id="bib">
+    <title>References</title>
+  </bibliography>
+  <section xml:id="Sx7">
+    <title>Acknowledgements</title>
+    <para xml:id="Sx7.p1">
+      <p>This research was partly supported by the 14th Five-Year Planning Project for the Development of Philosophy and Social Sciences in Guangzhou (Grant no. 2022GZGJ290), and Department of Education of Guangdong Province and Guangdong University of Finance under Grant no. 2021WQNCX049.</p>
+    </para>
+<!--  %****␣main.tex␣Line␣275␣**** -->  </section>
+  <section xml:id="Sx8">
+    <title>Author contributions statement</title>
+    <para xml:id="Sx8.p1">
+      <p>Y.X. J.S. and C.F. conceived the experiment(s), Y.X. and H.Y.K. conducted the experiment(s), Y.X. and H.Y.K. analysed the results, J.S. and C.F. worked on writing—review and Editing. All authors reviewed the manuscript.</p>
+    </para>
+  </section>
+</document>
